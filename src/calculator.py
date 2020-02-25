@@ -10,32 +10,21 @@ number_1 = float(input('first number'))
 number_2 = float(input('second number'))
 
 if choice == '+':
+    print('{} + {} = '.format(number_1, number_2))
     print(number_1 + number_2)
-    
-elif choice == '-':
-   print(number_1 - numbber_2)
-   
-elif choice == '*':
+
+elif coice '*':
+    print('{} * {} = ' .format(number_1, number_2))
     print(number_1 * number_2)
-    
+
+elif choice == '-':
+    print('{} - {} = ' .format(number_1, number_2))
+    print(number_1 - numbber_2)
+
 elif choice == '/':
+
+    print('{} / {} = ' .format(number_1, number_2))
     print(number_1 / number_2)
 
 else:
-    print("try again"
-
-
-print('{} + {} = '.format(number_1, number_2))
-print(number_1 + number_2)
-
-print('{} * {} = ' .format(number_1, number_2))
-print(number_1 * number_2)
-
-print('{} - {} = ' .format(number_1, number_2))
-print(number_1 - numbber_2)
-
-print('{} / {} = ' .format(number_1, number_2))
-print(number_1 / number_2)
-
-
-
+    print("try again")
