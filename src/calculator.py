@@ -13,7 +13,7 @@ if choice == '+':
     print('{} + {} = '.format(number_1, number_2))
     print(number_1 + number_2)
 
-elif coice '*':
+elif choice == '*':
     print('{} * {} = ' .format(number_1, number_2))
     print(number_1 * number_2)
 
