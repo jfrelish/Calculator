@@ -12,3 +12,7 @@ class Calculator:
         c = a + b
         return c
 
+    def subtraction(self, a, b):
+        c = a - b
+        return c
+

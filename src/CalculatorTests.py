@@ -8,15 +8,18 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
 
-    def test_results_property_calculator(self):
-        calculator = Calculator()
-        self.assertIsInstance(calculator.result, 8)
+   # def test_results_property_calculator(self):
+    #    calculator = Calculator()
+     #   self.assertIsInstance(calculator.result, 8)
 
     def test_add_method_calulator(self):
         calculator = Calculator()
         self.assertEqual(calculator.addition(4,4), 8)
 
-   # self.assertEqual(Calculator.addition(4,4), 8)
+    def test_subtract_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.subtraction(4,4), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
