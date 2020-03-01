@@ -16,3 +16,6 @@ class Calculator:
         c = a - b
         return c
 
+    def multiply(self, a, b):
+        c = a * b
+        return c
