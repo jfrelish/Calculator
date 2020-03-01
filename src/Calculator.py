@@ -1,12 +1,14 @@
-def addition(a, b):
-    return a + b
+#def addition(a, b):
+    #return a + b
+
 class Calculator:
-    result = 0
 
     def __init__(self):
-        x = 2 + 2
-        self.result = x
+        x = 4 + 4
+        self.result = x;
         pass
 
-    #def addition(self, a, b):
-       # self.result = a + b
+    def addition(self, a, b):
+        c = a + b
+        return c
+
