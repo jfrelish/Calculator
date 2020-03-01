@@ -29,3 +29,7 @@ class Calculator:
     def sqrt(self,  a):
         c = math.sqrt(a)
         return c
+
+    def square(self, a):
+         c = a**2
+         return c
