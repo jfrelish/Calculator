@@ -1,5 +1,7 @@
 #def addition(a, b):
-    #return a + b
+    #return a +
+
+import math
 
 class Calculator:
 
@@ -22,4 +24,8 @@ class Calculator:
 
     def divide(self, a, b,):
         c = a / b
+        return c
+
+    def sqrt(self,  a):
+        c = math.sqrt(a)
         return c

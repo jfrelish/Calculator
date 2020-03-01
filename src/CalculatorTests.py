@@ -1,5 +1,6 @@
 import unittest
 
+
 from Calculator import Calculator
 
 class MyTestCase(unittest.TestCase):
@@ -27,6 +28,10 @@ class MyTestCase(unittest.TestCase):
     def test_division_method_calculator(self):
         calculator = Calculator()
         self.assertEqual(calculator.divide(10, 2 ), 5)
+
+    def test_sqrt_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.sqrt(25), 5)
 
 if __name__ == '__main__':
     unittest.main()
