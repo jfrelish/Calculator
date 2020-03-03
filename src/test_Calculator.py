@@ -18,19 +18,19 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.addition(3, 5), result)
         self.assertEqual(self.calculator.result, result)
 
-    def test_subtract_method_calculator(self):
+    def test_subtract(self):
         self.assertEqual(self.calculator.subtraction(4,4), 0)
 
-    def test_multiply_method_calculator(self):
+    def test_multiply(self):
         self.assertEqual(self.calculator.multiply(4,4), 16)
 
-    def test_division_method_calculator(self):
+    def test_division(self):
         self.assertEqual(self.calculator.divide(10, 2 ), 5)
 
-    def test_sqrt_method_calculator(self):
+    def test_sqrt(self):
         self.assertEqual(self.calculator.sqrt(25), 5)
 
-    def test_square_method_calculator(self):
+    def test_square(self):
         self.assertEqual(self.calculator.square(25), 625)
 
 if __name__ == '__main__':
