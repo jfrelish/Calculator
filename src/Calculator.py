@@ -1,18 +1,21 @@
-#def addition(a, b):
-    #return a +
+
+def fn_addition(a, b):
+    return float(a) + float(b)
 
 import math
 
+
 class Calculator:
+    result = 0
 
     def __init__(self):
         x = 4 + 4
         self.result = x;
         pass
 
-    def addition(self, a, b):
-        c = a + b
-        return c
+    def add(self, a, b):
+        self.result = fn_addition(a, b)
+        return self.result
 
     def subtraction(self, a, b):
         c = a - b
