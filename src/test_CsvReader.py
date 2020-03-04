@@ -9,45 +9,58 @@ class CsvReaderTests(unittest.TestCase):
     def setUp(self):
         self.calculator = Calculator()
 
+    def test_self(self):
+        test_self = CsvReader('src/CsvFiles/Unit test Self.csv').data
+        for row in test_self:
+            result = int(row['result'])
+            self.assertEqual(int(row['row']), 2)
+            pprint(result)
+
     def test_addition(self):
-        test_data = CsvReader('src/CsvFiles/Unit Test Addition.csv').data
-        for row in test_data:
+        test = CsvReader('src/CsvFiles/Unit Test Addition.csv').data
+        for row in test:
             result = float(row['Result'])
             self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), result)
-
+            pprint(test)
 
     def test_subtraction(self):
-        test_data = CsvReader('/src/CsvFiles/Unit Test Subtraction.csv').data
-        for row in test_data:
+        test = CsvReader('/src/CsvFiles/Unit Test Subtraction.csv').data
+        for row in test:
             result = float(row['Result'])
             if row['Value 1'] != row['Value 2']:
                 self.assertEqual(self.calculator.subtraction(row['Value 2'], row['Value 1']), result)
-                #pprint(test_data)
+                pprint(test)
             else:
                 self.assertEqual(self.calculator.subtraction(row['Value 1'], row['Value 2']), result)
-                #pprint(test_data)
+                pprint(test)
 
     def test_multiply(self):
-        test_data = CsvReader('/src/CsvFiles/Unit Test Multiplication.csv').data
-        for row in test_data:
+        test = CsvReader('/src/CsvFiles/Unit Test Multiplication.csv').data
+        for row in test:
             result = float(row['Result'])
             self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), result)
-            #pprint(test_data)
+            pprint(test)
 
     def test_divide(self):
-        test_data = CsvReader('/src/CsvFiles/Unit Test Division.csv').data
-        for row in test_data:
+        test = CsvReader('/src/CsvFiles/Unit Test Division.csv').data
+        for row in test:
             result = float(row['Result'])
             self.assertAlmostEqual(round(self.calculator.divide(row['Value 2'], row['Value 1']), 7), result)
-            #pprint(test_data)
+            pprint(test)
 
     def test_sqrt(self):
-        test_data = CsvReader('/src/CsvFiles/Unit Test Square Root.csv').data
-        for row in test_data:
+        test = CsvReader('/src/CsvFiles/Unit Test Square Root.csv').data
+        for row in test:
             result = float(row['Result'])
             self.assertAlmostEqual(self.calculator.sqrt(row['Value 1']), result)
-            pprint(test_data)
+            pprint(test)
 
+    def test_square(self):
+        test = CsvReader('/src/CsvFiles/Unit Test Square.csv').data
+        for row in test:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.square(row['Value 1']), result)
+            pprint(test)
 
 
 if __name__ == '__main__':

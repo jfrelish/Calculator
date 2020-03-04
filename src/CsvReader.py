@@ -1,10 +1,9 @@
 import csv
 
+
 class CsvReader:
 
     data = []
-
-
 
     def __init__(self, filepath):
 
@@ -19,3 +18,4 @@ class CsvReader:
                 self.data.append(row)
 
         pass
+
