@@ -22,10 +22,33 @@ class CsvReaderTests(unittest.TestCase):
             result = float(row['Result'])
             if row['Value 1'] != row['Value 2']:
                 self.assertEqual(self.calculator.subtraction(row['Value 2'], row['Value 1']), result)
-                pprint(test_data)
+                #pprint(test_data)
             else:
                 self.assertEqual(self.calculator.subtraction(row['Value 1'], row['Value 2']), result)
-                pprint(test_data)
+                #pprint(test_data)
+
+    def test_multiply(self):
+        test_data = CsvReader('/src/CsvFiles/Unit Test Multiplication.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), result)
+            #pprint(test_data)
+
+    def test_divide(self):
+        test_data = CsvReader('/src/CsvFiles/Unit Test Division.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertAlmostEqual(round(self.calculator.divide(row['Value 2'], row['Value 1']), 7), result)
+            #pprint(test_data)
+
+    def test_sqrt(self):
+        test_data = CsvReader('/src/CsvFiles/Unit Test Square Root.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.sqrt(row['Value 1']), result)
+            pprint(test_data)
+
+
 
 if __name__ == '__main__':
          unittest.main()

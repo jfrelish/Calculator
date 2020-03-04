@@ -25,15 +25,19 @@ class Calculator:
         return self.result
 
     def multiply(self, a, b):
-        c = a * b
-        return c
+        self.result = float(a) * float(b)
+        return self.result
 
     def divide(self, a, b,):
-        c = a / b
-        return c
+        #float(a) > float(b):
+        self.result = float(a) / float(b)
+        return self.result
+        #elif float(a) < float(b):
+           # self.result = float(b) / float(a)
+            #return self.result
 
     def sqrt(self,  a):
-        c = math.sqrt(a)
+        c = math.sqrt(float(a))
         return c
 
     def square(self, a):
