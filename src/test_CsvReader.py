@@ -45,7 +45,7 @@ class CsvReaderTests(unittest.TestCase):
         test_data = CsvReader('/src/CsvFiles/Unit Test Square Root.csv').data
         for row in test_data:
             result = float(row['Result'])
-            self.assertEqual(self.calculator.sqrt(row['Value 1']), result)
+            self.assertAlmostEqual(self.calculator.sqrt(row['Value 1']), result)
             pprint(test_data)
 
 
