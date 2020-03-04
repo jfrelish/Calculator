@@ -1,5 +1,9 @@
 # Calculator
 
+
+Author: Jeffrey Frelish
+
+
 **changelog:**
 
 *3.1.20
@@ -21,3 +25,8 @@
 - feature: added unit test Square
 - feature: added unit test Square root
 - feature: added unit test Substraction
+
+
+* 3.4.20 *
+- task: moved Calculator.py
+- task: cleaned up static method in Calculator.py
