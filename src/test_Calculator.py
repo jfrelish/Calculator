@@ -17,10 +17,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.addition(3, 5), 8)
 
     def test_subtract(self):
-        self.assertEqual(self.calculator.subtraction(4,4), 0)
+        self.assertEqual(self.calculator.subtraction(4, 4), 0)
 
     def test_multiply(self):
-        self.assertEqual(self.calculator.multiply(4,4), 16)
+        self.assertEqual(self.calculator.multiply(4, 4), 16)
 
     def test_division(self):
         self.assertEqual(self.calculator.divide(10, 2), 5)
@@ -30,6 +30,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_square(self):
         self.assertEqual(self.calculator.square(25), 625)
+
 
 if __name__ == '__main__':
     unittest.main()

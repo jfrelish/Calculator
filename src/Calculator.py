@@ -3,15 +3,15 @@ from math import pow
 
 
 def addition(a, b):
-    return float(a) + float(b)
+    return int(a) + int(b)
 
 
 def subtraction(a, b):
-    return float(a) - float(b)
+    return int(a) - int(b)
 
 
 def multiply(a, b):
-    return float(a) * float(b)
+    return int(a) * int(b)
 
 
 def divide(a, b):
@@ -23,7 +23,7 @@ def sqrt(a):
 
 
 def square(a):
-    return  pow(float(a), 2)
+    return pow(float(a), 2)
 
 
 class Calculator:
@@ -54,5 +54,5 @@ class Calculator:
         return self.result
 
     def square(self, a):
-         self.result = square(a)
-         return self.result
+        self.result = square(a)
+        return self.result
