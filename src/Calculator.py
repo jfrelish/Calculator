@@ -3,11 +3,11 @@ from math import pow
 
 
 def addition(a, b):
-    return float(a) + float(b)
+    return int(a) + int(b)
 
 
 def subtraction(a, b):
-    return float(a) - float(b)
+    return int(a) - int(b)
 
 
 def multiply(a, b):
